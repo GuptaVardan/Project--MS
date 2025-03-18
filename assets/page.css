@@ -1,6 +1,4 @@
-/* ================= Global Styles ================== */
-
-/* Set a universal font and remove margins */
+/* Global Styles */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -16,9 +14,7 @@ body {
     background-repeat: no-repeat;
 }
 
-/* ================ Title & Headers ================= */
-
-/* Main Page Title */
+/* Title & Headers */
 h1 {
     color: white;
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
@@ -27,7 +23,6 @@ h1 {
     margin-bottom: 20px;
 }
 
-/* Section Headers */
 h2, h3, h4 {
     color: white;
     text-align: center;
@@ -35,9 +30,8 @@ h2, h3, h4 {
     margin-top: 20px;
 }
 
-/* ================= Navigation Buttons ================== */
-
-a[data-testid="stMarkdownContainer"] p {
+/* Navigation Buttons */
+button {
     display: block;
     text-align: center;
     background-color: #007bff; /* Primary color */
@@ -54,15 +48,12 @@ a[data-testid="stMarkdownContainer"] p {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Hover Effect */
-a[data-testid="stMarkdownContainer"] p:hover {
+button:hover {
     background-color: #0056b3;
     transform: scale(1.05);
 }
 
-/* =================== Layout & Content Styling ==================== */
-
-/* Center Align Containers */
+/* Layout & Content Styling */
 [data-testid="stSidebar"], [data-testid="stVerticalBlock"] {
     text-align: center;
     align-items: center;
@@ -79,15 +70,28 @@ a[data-testid="stMarkdownContainer"] p:hover {
     max-width: 800px;
     margin: 20px auto;
 }
+/* Example CSS for Sliding Panel */
+.panel {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: all 0.5s ease-in-out;
+    transform: translateX(100%);
+}
 
-/* ================= Mobile Responsiveness ================= */
+.panel.show {
+    transform: translateX(0);
+}
 
+
+/* Mobile Responsiveness */
 @media (max-width: 768px) {
     h1 {
         font-size: 2.5rem;
     }
 
-    a[data-testid="stMarkdownContainer"] p {
+    button {
         width: 90%;
         font-size: 16px;
     }
@@ -97,4 +101,3 @@ a[data-testid="stMarkdownContainer"] p:hover {
         padding: 15px;
     }
 }
-

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bohr Model Simulation</title>
+    <style>
+        #canvas {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas" width="400" height="400"></canvas>
+    <script>
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+
+        // Draw nucleus
+        ctx.beginPath();
+        ctx.arc(200, 200, 20, 0, 2 * Math.PI);
+        ctx.fillStyle = 'red';
+        ctx.fill();
+
+        // Simulate electron orbit
+        let angle = 0;
+        function drawElectron() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.beginPath();
+            ctx.arc(200, 200, 20, 0, 2 * Math.PI);
+            ctx.fillStyle = 'red';
+            ctx.fill();
+
+            ctx.beginPath();
+            ctx.arc(200 + Math.cos(angle) * 100, 200 + Math.sin(angle) * 100, 5, 0, 2 * Math.PI);
+            ctx.fillStyle = 'blue';
+            ctx.fill();
+
+            angle += 0.01;
+            requestAnimationFrame(drawElectron);
+        }
+        drawElectron();
+    </script>
+</body>
+</html>
