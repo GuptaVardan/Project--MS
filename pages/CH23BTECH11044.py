@@ -1,11 +1,10 @@
-# CH23BTECH11044.py
 import streamlit as st
+
+st.set_page_config(page_title="Vardan Gupta - Ruthenium", layout="wide")
 
 # Include page.css for styling
 with open("assets/page.css") as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
-
-st.set_page_config(page_title="Vardan Gupta - Ruthenium", layout="wide")
 
 st.title("Assignment: Vardan Gupta (Roll No. CH23BTECH11044)")
 
