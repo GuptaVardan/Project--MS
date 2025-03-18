@@ -8,7 +8,7 @@ with open("assets/style.css") as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 # Title
-st.title("selenium Properties 🌟")
+st.title("Selenium Properties 🌟")
 
 st.image("assets/selenium.png", width=200) 
 # Background Image
@@ -97,15 +97,13 @@ with tab9:
     st.write("- Time Dilation Effects: Not significant at atomic scale 🕒")
 
 # Additional Details
-st.header("### Additional Details 📚")
+st.header("Additional Details 📚")
 st.markdown("""
 - Selenium exhibits **photoconductivity**, increasing its conductivity when exposed to light 🌞.
 - It plays a crucial role in the **semiconductor industry** due to its unique electrical properties ⚡.
 - Selenium is used in **glass decolorization** and as a pigment for red glass 🎨.
 """)
 
-st.subheader("Orbital Simulation Diagram")
-st.image("https://www.chemguide.co.uk/atoms/properties/sep.gif", caption="Selenium Orbital Diagram Example")
 
 import base64
 
