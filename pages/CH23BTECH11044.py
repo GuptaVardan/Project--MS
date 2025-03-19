@@ -8,7 +8,7 @@ st.set_page_config(page_title="Ruthenium Properties", layout="wide")
 with open("assets/style.css") as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
-# Title and Header
+
 st.title("Ruthenium Properties 🌟")
 st.image("assets/ruthenium.png", width=200)
 
@@ -193,13 +193,10 @@ with tab9:
 
 # Additional Details
 st.write("\n")
-st.header("### Additional Details")
+st.header("Additional Details")
 st.write("Ruthenium is a highly effective catalyst in hydrogenation reactions and ammonia production.")
 st.write("It plays a role in magnetic storage technology for hard-disk drives.")
 st.write("Ruthenium-based catalysts are used in water splitting for hydrogen fuel cells.")
-
-st.subheader("Orbital Simulation Diagram")
-st.image("https://www.chemguide.co.uk/atoms/properties/rup.gif", caption="Ruthenium Orbital Diagram Example")
 
 import base64
 
