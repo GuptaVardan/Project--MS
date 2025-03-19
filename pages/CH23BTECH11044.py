@@ -76,8 +76,8 @@ with tab8:  # Nuclear
     st.write("### Nuclear Properties")
     st.markdown("""
     - *Radioactive Isotopes*:
-      - Ru-103: 39.26d (β⁻ → Rh-103)
-      - Ru-106: 373.6d (β⁻ → Rh-106)
+      - Ru-103: Half Life - 39.26 days (β⁻ → Rh-103)
+      - Ru-106: Half Life - 373.6 days (β⁻ → Rh-106)
     - *Decay Chains*:
       
         - Ru-106 --> Rh-106
