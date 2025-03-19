@@ -50,7 +50,7 @@ with tab12:  # Crystallography
     st.markdown("""
     *HCP Structure*:
     - Miller Indices: (0001), (10-10)
-    - Lattice Constants: a=3.23Å, c=5.15Å
+    - Lattice Constants: a = 3.23Å, c = 5.15Å
     
     *Dislocation Types*[14]:
     - Edge (1.2nm spacing)
@@ -153,8 +153,8 @@ with tab8:  # Nuclear
     st.header(" Nuclear Properties")
     st.markdown("""
     - *Radioactive Isotopes*:
-      - Zr-93: 1.53My (β⁻ → Nb-93)
-      - Zr-95: 64d (β⁻ → Nb-95)
+      - Zr-93: Half Life - 1.53 million years (β⁻ → Nb-93)
+      - Zr-95: Half Life - 64 days (β⁻ → Nb-95)
     - *Decay Chains*:
       
       graph LR
