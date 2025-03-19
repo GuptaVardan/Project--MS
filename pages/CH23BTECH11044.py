@@ -175,7 +175,6 @@ with tab6:
 with tab7:
     st.write("### Thermodynamic Properties")
     st.write("- Specific Heat Capacity (Cp): 24.06 J/(mol·K)")
-    st.write("- Heat of Formation: Not applicable.")
     st.write("- Thermal Conductivity: 117 W/(m·K)")
     st.write("- Enthalpy of Fusion: 38.59 kJ/mol")
     st.write("- Enthalpy of Vaporization: 591.6 kJ/mol")
