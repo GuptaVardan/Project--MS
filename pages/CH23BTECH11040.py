@@ -98,7 +98,7 @@ render_svg("assets/bohr-animated.svg")
 # Display properties in tabs
 # Updated Existing Tabs
 with tab1:  # Fundamental
-    st.write("### Fundamental Properties")
+    st.write("Fundamental Properties")
     st.write("- Magic Number Isotope: Zr-90 (50 neutrons) ✅[5]")
     st.write("- Stable Isotopes: Zr-90, Zr-91, Zr-92, Zr-94[7]")
 
@@ -108,7 +108,7 @@ with tab1:  # Fundamental
     st.write("- Isotopes: Five naturally occurring isotopes 🌍")
 
 with tab2:  # Physical
-    st.write("### Physical Properties")
+    st.write("Physical Properties")
     st.write("- Appearance: Greyish-white 🎨")
     st.write("- Melting Point: 1853°C 🔥")
     st.write("- Boiling Point: 4400°C 💨")
@@ -119,7 +119,7 @@ with tab2:  # Physical
     st.write("- Anisotropic: Direction-dependent properties ↔[11]")
 
 with tab3:
-    st.write("### Chemical Properties")
+    st.write(" Chemical Properties")
     st.write("- Electronegativity: 1.33 ⚡")
     st.write("- Oxidation State: +4 🔄")
     st.write("- Reactivity: Highly resistant to corrosion ⚗️")
@@ -129,26 +129,26 @@ with tab3:
     st.write(" - Third: 2218 kJ/mol 💡")
 
 with tab4:
-    st.write("### Quantum Properties")
+    st.write(" Quantum Properties")
     st.write("- Principal Quantum Number (n): 1 to 5 🔮")
     st.write("- Azimuthal Quantum Number (l): 0, 1, 2, 3 🔮")
 
 with tab5:
-    st.write("### Mechanical Properties")
+    st.write(" Mechanical Properties")
     st.write("- Elasticity: Ductile and malleable 💪")
     st.write("- Toughness/Ductility: High toughness 🤏")
 
 with tab6:
-    st.write("### Electromagnetic Properties")
+    st.write(" Electromagnetic Properties")
     st.write("- Electrical Conductivity: Moderate conductivity ⚡")
 
 with tab7:
-    st.write("### Thermodynamic Properties")
+    st.write(" Thermodynamic Properties")
     st.write("- Specific Heat Capacity (Cp): 25.36 J/(mol·K) 🌡️")
 
 # Updated Nuclear Properties Tab
 with tab8:  # Nuclear
-    st.write("### Nuclear Properties")
+    st.write(" Nuclear Properties")
     st.markdown("""
     - *Radioactive Isotopes*[7][10]:
       - Zr-93: 1.53My (β⁻ → Nb-93)

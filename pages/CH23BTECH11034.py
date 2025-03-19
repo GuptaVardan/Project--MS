@@ -21,7 +21,7 @@ tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9, tab10, tab11, tab12, tab13
 
 # Display properties in tabs
 with tab1:
-    st.write("### Fundamental Properties")
+    st.write(" Fundamental Properties")
     st.write("- Atomic Number: 34 🧮[7]")
     st.write("- Stable Isotopes: ⁷⁴Se, ⁷⁶Se, ⁷⁷Se, ⁷⁸Se, ⁸⁰Se[7]")
     st.write("- Radioactive Isotopes: ⁷⁵Se (119.8d), ⁷⁹Se (327ka)[7]")
@@ -31,7 +31,7 @@ with tab1:
     st.write("- Isotopes: Seven naturally occurring isotopes 🌍")
 
 with tab2:
-    st.write("### Physical Properties")
+    st.header(" Physical Properties")
     st.write("- Appearance: Silvery or red 🎨")
     st.write("- Melting Point: 221°C 🔥")
     st.write("- Boiling Point: 685°C 💨")
@@ -42,7 +42,7 @@ with tab2:
     st.write("- Crystal Structure: Hexagonal (gray form) 🧊")
 
 with tab3:
-    st.write("### Chemical Properties")
+    st.header("Chemical Properties")
     st.write("- Electronegativity: 2.55 (Pauling scale) ⚡")
     st.write("- Oxidation States: -2, +4, +6 🔄")
     st.write("- Reactivity: Forms compounds with metals and nonmetals ⚗️")
@@ -52,49 +52,46 @@ with tab3:
     st.write("   - Third: 2973.7 kJ/mol 💡")
 
 with tab4:
-    st.write("### Quantum Properties")
+    st.header(" Quantum Properties")
     st.write("- Principal Quantum Number (n): 1 to 4 🔮")
     st.write("- Azimuthal Quantum Number (l): 0, 1, 2, 3 🔮")
     st.write("- Magnetic Quantum Number (mₗ): -l to +l 🔮")
     st.write("- Spin Quantum Number (mₛ): ±1/2 🔮")
 
 with tab5:
-    st.write("### Mechanical Properties")
+    st.header(" Mechanical Properties")
     st.write("- Elasticity: Brittle 💔")
     st.write("- Plasticity: Not applicable (since it's brittle) 🚫")
     st.write("- Toughness/Ductility: Low toughness 🤏")
 
 with tab6:
-    st.write("### Electromagnetic Properties")
+    st.header("Electromagnetic Properties")
     st.write("- Electrical Conductivity: Low conductivity ⚡")
     st.write("- Magnetic Moment: Not significant 🧲")
     st.write("- Emission Spectrum: Not applicable 🌈")
 
 with tab7:
-    st.write("### Thermodynamic Properties")
+    st.header("Thermodynamic Properties")
     st.write("- Specific Heat Capacity (Cp): 25.04 J/(mol·K) 🌡️")
     st.write("- Heat of Fusion: 5.4 kJ/mol 🔥")
     st.write("- Enthalpy of Vaporization: 26 kJ/mol 💨")
 
 with tab8:
-    st.write("### Nuclear Properties")
+    st.header(" Nuclear Properties")
     st.write("- Nuclear Spin (I): Not applicable ⚛️")
     st.write("- Binding Energy: Energy needed to hold the nucleus together 🔗")
 
 with tab9:
-    st.write("### Relativistic Properties")
+    st.header(" Relativistic Properties")
     st.write("- Time Dilation Effects: Not significant at atomic scale 🕒")
 
 # Additional Details
-st.header("### Additional Details 📚")
+st.header(" Additional Details 📚")
 st.markdown("""
 - Selenium exhibits **photoconductivity**, increasing its conductivity when exposed to light 🌞.
 - It plays a crucial role in the **semiconductor industry** due to its unique electrical properties ⚡.
 - Selenium is used in **glass decolorization** and as a pigment for red glass 🎨.
 """)
-
-st.subheader("Orbital Simulation Diagram")
-st.image("https://www.chemguide.co.uk/atoms/properties/sep.gif", caption="Selenium Orbital Diagram Example")
 
 import base64
 
