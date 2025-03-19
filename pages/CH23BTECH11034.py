@@ -1,4 +1,5 @@
 import streamlit as st
+import base64
 
 # Set page configuration
 st.set_page_config(page_title="Selenium Properties", layout="wide")
@@ -7,38 +8,24 @@ st.set_page_config(page_title="Selenium Properties", layout="wide")
 with open("assets/style.css") as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
-# Title
-st.title("selenium Properties 🌟")
+# Title and Header
+st.title("Selenium Properties 🌟")
+st.image("assets/selenium.png", width=200)
 
-st.image("assets/selenium.png", width=200) 
-# Background Image
-st.markdown(f"""
-<style>
-    body {{
-        background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Selenium_atom.svg/1024px-Selenium_atom.svg.png");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }}
-</style>
-""", unsafe_allow_html=True)
-
-tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9, tab10 = st.tabs([
-    "🔍 Fundamental Properties",
-    "🔩 Physical Properties",
-    "⚗️ Chemical Properties",
-    "🔮 Quantum Properties",
-    "💪 Mechanical Properties",
-    "🔌 Electromagnetic Properties",
-    "🌡️ Thermodynamic Properties",
-    "⚛️ Nuclear Properties",
-    "🕳️ Relativistic Properties",
-    "⚛️ Bohr Model Simulation"
+# Create tabs with new additions
+tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9, tab10, tab11, tab12, tab13, tab14 = st.tabs([
+    "🔍 Fundamental", "🔩 Physical", "⚗ Chemical", "🔮 Quantum", "💪 Mechanical",
+    "🔌 Electromagnetic", "🌡 Thermodynamic", "⚛ Nuclear", "🕳 Relativistic",
+    "🔲 Allotropes", "☠ Toxicity", "🌌 Astrophysics", "💡 Applications", "🔬 Crystallography"
 ])
+
 # Display properties in tabs
 with tab1:
     st.write("### Fundamental Properties")
-    st.write("- Atomic Number: 34 🧮")
+    st.write("- Atomic Number: 34 🧮[7]")
+    st.write("- Stable Isotopes: ⁷⁴Se, ⁷⁶Se, ⁷⁷Se, ⁷⁸Se, ⁸⁰Se[7]")
+    st.write("- Radioactive Isotopes: ⁷⁵Se (119.8d), ⁷⁹Se (327ka)[7]")
+
     st.write("- Atomic Mass: 78.96 ⚖️")
     st.write("- Electronic Configuration: [Ar] 3d¹⁰ 4s² 4p⁴ 💻")
     st.write("- Isotopes: Seven naturally occurring isotopes 🌍")
@@ -49,6 +36,8 @@ with tab2:
     st.write("- Melting Point: 221°C 🔥")
     st.write("- Boiling Point: 685°C 💨")
     st.write("- Density: 4.81 g/cm³ 📏")
+    st.write("- Anisotropic: Different properties along crystal axes ↔[11]")
+
     st.write("- Atomic Radius: 120 pm ⚛️")
     st.write("- Crystal Structure: Hexagonal (gray form) 🧊")
 
@@ -132,3 +121,66 @@ try:
     render_svg(svg_file_path)
 except FileNotFoundError:
     st.error(f"SVG file not found at: {svg_file_path}")
+
+
+with tab10:  # Allotropes
+    st.write("## Allotropic Forms")
+    st.markdown("""
+    *Crystalline Forms*[3][6]:
+    - Gray Selenium (Hexagonal, Metallic)
+    - Red Selenium (Monoclinic)
+    
+    *Amorphous Forms*[6]:
+    - Black Selenium (Vitreous)
+    - Colloidal Red (Nanoparticles)
+    """)
+    st.image("allotropes_diagram.png", width=300)
+
+with tab11:  # Toxicity
+    st.write("## Toxicological Profile")
+    st.markdown("""
+    - *LD₅₀ (Human)*: ~5mg/kg[2]
+    - *Acute Symptoms*: Respiratory distress, garlic breath[2]
+    - *Chronic Exposure*: Hair loss, neurological damage[2]
+    """)
+
+with tab12:  # Astrophysics
+    st.write("## Supernova Nucleosynthesis")
+    st.markdown("""
+    - *Formation Process*[8]:
+      - r-process in Type II supernovae
+      - Neutron star mergers
+    - *Key Isotopes*: ⁷⁷Se, ⁷⁸Se, ⁸²Se[8]
+    """)
+
+with tab13:  # Applications
+    st.write("## Industrial Applications")
+    st.markdown("""
+    - *Photoconductive Devices*[1][4]:
+      
+      def calculate_conductivity(light_intensity):
+          return base_conductivity * (1 + 0.15*light_intensity)
+      
+    - *Semiconductor Uses*[4]:
+      - CIGS solar cells
+      - Quantum dot LEDs
+    """)
+
+with tab14:  # Crystallography
+    st.write("## Crystalline Properties")
+    st.markdown("""
+    *Hexagonal Structure*[6][13]:
+    - Miller Indices: (0001), (101̅0)
+    - Dislocation Types: Edge & Screw[14]
+    - Lattice Constants: a=4.36Å, c=4.95Å
+    """)
+
+# Background styling remains unchanged
+st.markdown("""
+<style>
+    body {{
+        background-image: url("https://upload.wikimedia.org/...");
+        background-size: cover;
+    }}
+</style>
+""", unsafe_allow_html=True)
