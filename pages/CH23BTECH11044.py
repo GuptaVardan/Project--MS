@@ -32,8 +32,6 @@ with tab10:  # Applications
     - Ammonia synthesis (Haber process)
     - Oxygen evolution reaction (OER) in water splitting
     
-    def calculate_activity(surface_area):
-        return base_activity * (surface_area/100)
     
     
     *Data Storage*:
