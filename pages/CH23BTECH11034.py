@@ -78,7 +78,6 @@ with tab6:
     st.header("Electromagnetic Properties")
     st.write("- Electrical Conductivity: Low conductivity")
     st.write("- Magnetic Moment: Not significant")
-    st.write("- Emission Spectrum: Not applicable")
 
 with tab7:
     st.header("Thermodynamic Properties")
