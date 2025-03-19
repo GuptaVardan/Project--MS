@@ -21,10 +21,10 @@ tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9, tab10, tab11, tab12, tab13
 
 # Display properties in tabs
 with tab1:
-    st.write(" Fundamental Properties")
-    st.write("- Atomic Number: 34 🧮[7]")
-    st.write("- Stable Isotopes: ⁷⁴Se, ⁷⁶Se, ⁷⁷Se, ⁷⁸Se, ⁸⁰Se[7]")
-    st.write("- Radioactive Isotopes: ⁷⁵Se (119.8d), ⁷⁹Se (327ka)[7]")
+    st.header(" Fundamental Properties")
+    st.write("- Atomic Number: 34 🧮")
+    st.write("- Stable Isotopes: ⁷⁴Se, ⁷⁶Se, ⁷⁷Se, ⁷⁸Se, ⁸⁰Se")
+    st.write("- Radioactive Isotopes: ⁷⁵Se (119.8d), ⁷⁹Se (327ka)")
 
     st.write("- Atomic Mass: 78.96 ⚖️")
     st.write("- Electronic Configuration: [Ar] 3d¹⁰ 4s² 4p⁴ 💻")
@@ -36,7 +36,7 @@ with tab2:
     st.write("- Melting Point: 221°C 🔥")
     st.write("- Boiling Point: 685°C 💨")
     st.write("- Density: 4.81 g/cm³ 📏")
-    st.write("- Anisotropic: Different properties along crystal axes ↔[11]")
+    st.write("- Anisotropic: Different properties along crystal axes ")
 
     st.write("- Atomic Radius: 120 pm ⚛️")
     st.write("- Crystal Structure: Hexagonal (gray form) 🧊")
@@ -110,7 +110,7 @@ def render_svg(svg_file_path):
 
 # Orbital Simulation Diagram Section
 st.subheader("Orbital Simulation Diagram")
-st.write("Below is an animated Bohr model representation of Zirconium:")
+st.write("Below is an animated Bohr model representation of Selenium:")
 
 # Render the SVG file directly (ensure the file exists in your project directory)
 svg_file_path = "assets/bohr-animated (2).svg"  # Adjust path as needed
@@ -121,52 +121,51 @@ except FileNotFoundError:
 
 
 with tab10:  # Allotropes
-    st.write("## Allotropic Forms")
+    st.header("Allotropic Forms")
     st.markdown("""
-    *Crystalline Forms*[3][6]:
+    *Crystalline Forms*:
     - Gray Selenium (Hexagonal, Metallic)
     - Red Selenium (Monoclinic)
     
-    *Amorphous Forms*[6]:
+    *Amorphous Forms*:
     - Black Selenium (Vitreous)
     - Colloidal Red (Nanoparticles)
     """)
-    st.image("allotropes_diagram.png", width=300)
 
 with tab11:  # Toxicity
-    st.write("## Toxicological Profile")
+    st.header("## Toxicological Profile")
     st.markdown("""
-    - *LD₅₀ (Human)*: ~5mg/kg[2]
-    - *Acute Symptoms*: Respiratory distress, garlic breath[2]
-    - *Chronic Exposure*: Hair loss, neurological damage[2]
+    - *LD₅₀ (Human)*: ~5mg/kg
+    - *Acute Symptoms*: Respiratory distress, garlic breath
+    - *Chronic Exposure*: Hair loss, neurological damage
     """)
 
 with tab12:  # Astrophysics
-    st.write("## Supernova Nucleosynthesis")
+    st.header("Supernova Nucleosynthesis")
     st.markdown("""
-    - *Formation Process*[8]:
+    - *Formation Process*:
       - r-process in Type II supernovae
       - Neutron star mergers
     - *Key Isotopes*: ⁷⁷Se, ⁷⁸Se, ⁸²Se[8]
     """)
 
 with tab13:  # Applications
-    st.write("## Industrial Applications")
+    st.header("Industrial Applications")
     st.markdown("""
-    - *Photoconductive Devices*[1][4]:
+    - *Photoconductive Devices*:
       
       def calculate_conductivity(light_intensity):
           return base_conductivity * (1 + 0.15*light_intensity)
       
-    - *Semiconductor Uses*[4]:
+    - *Semiconductor Uses*:
       - CIGS solar cells
       - Quantum dot LEDs
     """)
 
 with tab14:  # Crystallography
-    st.write("## Crystalline Properties")
+    st.header("Crystalline Properties")
     st.markdown("""
-    *Hexagonal Structure*[6][13]:
+    *Hexagonal Structure*:
     - Miller Indices: (0001), (101̅0)
     - Dislocation Types: Edge & Screw[14]
     - Lattice Constants: a=4.36Å, c=4.95Å

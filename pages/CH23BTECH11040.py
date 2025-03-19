@@ -24,31 +24,31 @@ tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9, tab10, tab11, tab12, tab13
 
 # New Tabs with Added Properties
 with tab10:  # Applications
-    st.write("## Industrial Applications")
+    st.header("Industrial Applications")
     st.markdown("""
     *Nuclear Reactors*:
-    - Neutron transparency: 0.18 barn absorption cross-section[1]
+    - Neutron transparency: 0.18 barn absorption cross-section
     - Fuel rod cladding in PWR reactors
     
     *Advanced Materials*:
-    - Zircaloy alloys (Zr + 1.5% Sn)[3]
-    - Superconducting ZrNb alloys (<4K)[2]
+    - Zircaloy alloys (Zr + 1.5% Sn)
+    - Superconducting ZrNb alloys (<4K)
     """)
 
 with tab11:  # Astrophysics
-    st.write("## Stellar Nucleosynthesis")
+    st.header(" Stellar Nucleosynthesis")
     st.markdown("""
-    - *Formation Sites*[8]:
+    - *Formation Sites*:
       - s-process in AGB stars
       - r-process in supernovae
-    - *Key Isotope*: Zr-90 (magic 50 neutrons)[5][8]
+    - *Key Isotope*: Zr-90 (magic 50 neutrons)
     - Found in presolar grains 🌌
     """)
 
 with tab12:  # Crystallography
-    st.write("## Crystal Structure Details")
+    st.header("Crystal Structure Details")
     st.markdown("""
-    *HCP Structure*[6][13]:
+    *HCP Structure*:
     - Miller Indices: (0001), (10-10)
     - Lattice Constants: a=3.23Å, c=5.15Å
     
@@ -58,9 +58,9 @@ with tab12:  # Crystallography
     """)
 
 with tab13:  # Geological
-    st.write("## Natural Occurrence")
+    st.header(" Natural Occurrence")
     st.markdown("""
-    - *Primary Mineral*: Zircon (ZrSiO₄)[4]
+    - *Primary Mineral*: Zircon (ZrSiO₄)
     - Gemstone Varieties:
       - Hyacinth (red)
       - Jargon (colorless)
@@ -68,9 +68,9 @@ with tab13:  # Geological
     """)
 
 with tab14:  # Alloys
-    st.write("## Alloy Properties")
+    st.header("Alloy Properties")
     st.markdown("""
-    *Zircaloy Composition*[3][12]:
+    *Zircaloy Composition*:
     
     zircaloy = {
         'Zr': 98%,
@@ -98,9 +98,9 @@ render_svg("assets/bohr-animated.svg")
 # Display properties in tabs
 # Updated Existing Tabs
 with tab1:  # Fundamental
-    st.write("Fundamental Properties")
-    st.write("- Magic Number Isotope: Zr-90 (50 neutrons) ✅[5]")
-    st.write("- Stable Isotopes: Zr-90, Zr-91, Zr-92, Zr-94[7]")
+    st.header("Fundamental Properties")
+    st.write("- Magic Number Isotope: Zr-90 (50 neutrons) ✅")
+    st.write("- Stable Isotopes: Zr-90, Zr-91, Zr-92, Zr-94")
 
     st.write("- Atomic Number: 40 🧮")
     st.write("- Atomic Mass: 91.22 ⚖️")
@@ -108,7 +108,7 @@ with tab1:  # Fundamental
     st.write("- Isotopes: Five naturally occurring isotopes 🌍")
 
 with tab2:  # Physical
-    st.write("Physical Properties")
+    st.header("Physical Properties")
     st.write("- Appearance: Greyish-white 🎨")
     st.write("- Melting Point: 1853°C 🔥")
     st.write("- Boiling Point: 4400°C 💨")
@@ -119,7 +119,7 @@ with tab2:  # Physical
     st.write("- Anisotropic: Direction-dependent properties ↔[11]")
 
 with tab3:
-    st.write(" Chemical Properties")
+    st.header(" Chemical Properties")
     st.write("- Electronegativity: 1.33 ⚡")
     st.write("- Oxidation State: +4 🔄")
     st.write("- Reactivity: Highly resistant to corrosion ⚗️")
@@ -129,28 +129,30 @@ with tab3:
     st.write(" - Third: 2218 kJ/mol 💡")
 
 with tab4:
-    st.write(" Quantum Properties")
+    st.header(" Quantum Properties")
     st.write("- Principal Quantum Number (n): 1 to 5 🔮")
     st.write("- Azimuthal Quantum Number (l): 0, 1, 2, 3 🔮")
+    st.write("- Magnetic Quantum Number (mₗ): -l to +l")
+    st.write("- Spin Quantum Number (mₛ): ±1/2")
 
 with tab5:
-    st.write(" Mechanical Properties")
+    st.header(" Mechanical Properties")
     st.write("- Elasticity: Ductile and malleable 💪")
     st.write("- Toughness/Ductility: High toughness 🤏")
 
 with tab6:
-    st.write(" Electromagnetic Properties")
+    st.header(" Electromagnetic Properties")
     st.write("- Electrical Conductivity: Moderate conductivity ⚡")
 
 with tab7:
-    st.write(" Thermodynamic Properties")
+    st.header(" Thermodynamic Properties")
     st.write("- Specific Heat Capacity (Cp): 25.36 J/(mol·K) 🌡️")
 
 # Updated Nuclear Properties Tab
 with tab8:  # Nuclear
-    st.write(" Nuclear Properties")
+    st.header(" Nuclear Properties")
     st.markdown("""
-    - *Radioactive Isotopes*[7][10]:
+    - *Radioactive Isotopes*:
       - Zr-93: 1.53My (β⁻ → Nb-93)
       - Zr-95: 64d (β⁻ → Nb-95)
     - *Decay Chains*:
@@ -163,7 +165,7 @@ with tab8:  # Nuclear
     st.write("- Binding Energy: Energy needed to hold the nucleus together 🔗")
 
 with tab9:
-    st.write("### Relativistic Properties")
+    st.header("### Relativistic Properties")
     st.write("- Time Dilation Effects: Not significant at atomic scale 🕒")
 
 # Add Bohr Model Simulation Tab

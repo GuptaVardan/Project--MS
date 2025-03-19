@@ -26,9 +26,9 @@ tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9, tab10, tab11, tab12, tab13
 
 # New Tabs with Added Properties
 with tab10:  # Applications
-    st.write("## Industrial Applications")
+    st.header("Industrial Applications")
     st.markdown("""
-    *Catalysis*[1][3]:
+    *Catalysis*:
     - Ammonia synthesis (Haber process)
     - Oxygen evolution reaction (OER) in water splitting
     
@@ -36,25 +36,25 @@ with tab10:  # Applications
         return base_activity * (surface_area/100)
     
     
-    *Data Storage*[2]:
+    *Data Storage*:
     - Perpendicular magnetic recording layers
     - 1.2TB/inch² density in modern HDDs
     """)
 
 with tab11:  # Astrophysics
-    st.write("## Stellar Nucleosynthesis")
+    st.header("Stellar Nucleosynthesis")
     st.markdown("""
-    - *Formation Sites*[8]:
+    - *Formation Sites*:
       - r-process in neutron star mergers
       - Type Ia/II supernovae
-    - *Key Isotopes*: Ru-99, Ru-106 [8]
+    - *Key Isotopes*: Ru-99, Ru-106
     - Found in presolar meteorites 🌠
     """)
 
 with tab12:  # Jewelry
-    st.write("## Jewelry Applications")
+    st.header("Jewelry Applications")
     st.markdown("""
-    *Alloy Composition*[4]:
+    *Alloy Composition*:
     - Pt-Ru (95:5 ratio) increases hardness by 40%
     - Pd-Ru improves tarnish resistance
     
@@ -64,11 +64,11 @@ with tab12:  # Jewelry
     """)
 
 with tab13:  # Crystallography
-    st.write("## Crystal Structure Details")
+    st.header("Crystal Structure Details")
     st.markdown("""
-    *HCP Characteristics*[6][13]:
+    *HCP Characteristics*:
     - Miller Indices: (0001), (10-10)
-    - Dislocation Types: Screw (80% prevalence) [14]
+    - Dislocation Types: Screw (80% prevalence) 
     - Slip Systems: Basal ⟨a⟩ type
     
     *Mechanical Effects*:
@@ -80,7 +80,7 @@ with tab13:  # Crystallography
 with tab8:  # Nuclear
     st.write("### Nuclear Properties")
     st.markdown("""
-    - *Radioactive Isotopes*[7][10]:
+    - *Radioactive Isotopes*:
       - Ru-103: 39.26d (β⁻ → Rh-103)
       - Ru-106: 373.6d (β⁻ → Rh-106)
     - *Decay Chains*:
@@ -89,7 +89,7 @@ with tab8:  # Nuclear
           Ru-106 --> Rh-106
           Rh-106 --> Pd-106
       
-    - Neutron Cross Section: 2.6 barns (thermal) [8]
+    - Neutron Cross Section: 2.6 barns (thermal)
     """)
 
 # Background styling remains unchanged
@@ -115,10 +115,10 @@ render_svg("assets/bohr-animated (1).svg")
 with tab1:  # Fundamental
     st.write("### Fundamental Properties")
     st.markdown("""
-    - Atomic Number: 44 [5]
-    - Magic Number Isotope: Ru-94 (50 neutrons) ✅[5][7]
-    - Stable Isotopes: Ru-96, Ru-98, Ru-99, Ru-100, Ru-101, Ru-102, Ru-104 [7]
-    - Electronic Configuration: [Kr] 4d⁷ 5s¹ [5]
+    - Atomic Number: 44 
+    - Magic Number Isotope: Ru-94 (50 neutrons) ✅
+    - Stable Isotopes: Ru-96, Ru-98, Ru-99, Ru-100, Ru-101, Ru-102, Ru-104
+    - Electronic Configuration: [Kr] 4d⁷ 5s¹ 
     """)
     st.write("- Atomic Number: 44")
     st.write("- Atomic Mass: 101.1")
@@ -128,9 +128,9 @@ with tab1:  # Fundamental
 with tab2:  # Physical
     st.write("### Physical Properties")
     st.markdown("""
-    - *Crystal Structure*: Hexagonal close-packed (HCP) [6]
-    - Lattice Constants: a=270.59pm, c=428.15pm [6]
-    - Anisotropic Properties: Electrical/mechanical direction-dependence ↔[11]
+    - *Crystal Structure*: Hexagonal close-packed (HCP) 
+    - Lattice Constants: a=270.59pm, c=428.15pm 
+    - Anisotropic Properties: Electrical/mechanical direction-dependence 
     """)
     st.write("- Appearance: Silver shiny.")
     st.write("- Melting Point: 2250°C")
@@ -187,19 +187,16 @@ with tab8:
     st.write("- Neutron Cross-Section: Low probability of neutron capture.")
 
 with tab9:
-    st.write("### Relativistic Properties")
+    st.write("Relativistic Properties")
     st.write("- Time Dilation Effects: Not significant at atomic scale.")
     st.write("- Relativistic Energy Correction: Electron energies shift slightly due to special relativity")
 
 # Additional Details
 st.write("\n")
-st.header("### Additional Details")
+st.header("Additional Details")
 st.write("Ruthenium is a highly effective catalyst in hydrogenation reactions and ammonia production.")
 st.write("It plays a role in magnetic storage technology for hard-disk drives.")
 st.write("Ruthenium-based catalysts are used in water splitting for hydrogen fuel cells.")
-
-st.subheader("Orbital Simulation Diagram")
-st.image("https://www.chemguide.co.uk/atoms/properties/rup.gif", caption="Ruthenium Orbital Diagram Example")
 
 import base64
 
@@ -218,7 +215,7 @@ def render_svg(svg_file_path):
 
 # Orbital Simulation Diagram Section
 st.subheader("Orbital Simulation Diagram")
-st.write("Below is an animated Bohr model representation of Zirconium:")
+st.write("Below is an animated Bohr model representation of Rythenium:")
 
 # Render the SVG file directly (ensure the file exists in your project directory)
 svg_file_path = "assets/bohr-animated (1).svg"  # Adjust path as needed
