@@ -130,7 +130,7 @@ with tab2:  # Physical
     st.write("### Physical Properties")
     st.markdown("""
     - *Crystal Structure*: Hexagonal close-packed (HCP) 
-    - Lattice Constants: a=270.59pm, c=428.15pm 
+    - Lattice Constants: a = 270.59pm, c = 428.15pm 
     - Anisotropic Properties: Electrical/mechanical direction-dependence 
     """)
     st.write("- Appearance: Silver shiny.")
