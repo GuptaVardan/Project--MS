@@ -80,9 +80,8 @@ with tab8:  # Nuclear
       - Ru-106: 373.6d (β⁻ → Rh-106)
     - *Decay Chains*:
       
-      graph LR
-          Ru-106 --> Rh-106
-          Rh-106 --> Pd-106
+        - Ru-106 --> Rh-106
+        - Rh-106 --> Pd-106
       
     """)
 
