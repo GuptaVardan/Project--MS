@@ -31,7 +31,15 @@ with tab1:
     st.write("- Atomic Mass: 78.96")
     st.write("- Electronic Configuration: [Ar] 3d¹⁰ 4s² 4p⁴")
     st.write("- Isotopes: Seven naturally occurring isotopes")
-
+with tab8:
+    st.header("Nucleare properties")
+    st.markdown("""
+    - *Radioactive Isotopes*:
+      - Se-75: Half Life - 119.8 days (β⁻ decay) → As-75 (Stable)
+      - Se-79: Half Life - 327,000 years (β⁻ decay) → Br-79 (Stable)
+    
+      
+    """)
 with tab2:
     st.header(" Physical Properties")
     st.write("- Appearance: Silvery or red")
