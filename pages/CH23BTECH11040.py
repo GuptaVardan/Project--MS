@@ -2,7 +2,7 @@ import streamlit as st
 import base64
 
 # Set page configuration
-st.set_page_config(page_title="Zirconium Properties", layout="wide")
+st.set_page_config(page_title="Saragadam Lokesh-Zirconium Properties", layout="wide")
 
 # Load CSS
 with open("assets/style.css") as f:

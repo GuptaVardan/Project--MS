@@ -2,7 +2,7 @@ import streamlit as st
 import base64
 
 # Set page configuration
-st.set_page_config(page_title="Ruthenium Properties", layout="wide")
+st.set_page_config(page_title="Vardan Gupta-Ruthenium Properties", layout="wide")
 
 # Load CSS
 with open("assets/style.css") as f:
