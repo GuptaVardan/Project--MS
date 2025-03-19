@@ -168,30 +168,3 @@ with tab9:
     st.header("### Relativistic Properties")
     st.write("- Time Dilation Effects: Not significant at atomic scale 🕒")
 
-# Add Bohr Model Simulation Tab
-# Streamlit interface for Bohr model simulation with animation
-import base64
-
-def render_svg(svg_file_path):
-    """
-    Reads and renders an SVG file in Streamlit.
-    
-    Parameters:
-        svg_file_path (str): Path to the SVG file.
-    """
-    with open(svg_file_path, "r") as f:
-        svg_content = f.read()  # Read the SVG file content
-    b64 = base64.b64encode(svg_content.encode("utf-8")).decode("utf-8")
-    html = r'<img src="data:image/svg+xml;base64,%s"/>' % b64
-    st.write(html, unsafe_allow_html=True)
-
-# Orbital Simulation Diagram Section
-st.subheader("Orbital Simulation Diagram")
-st.write("Below is an animated Bohr model representation of Zirconium:")
-
-# Render the SVG file directly (ensure the file exists in your project directory)
-svg_file_path = "assets/bohr-animated.svg"  # Adjust path as needed
-try:
-    render_svg(svg_file_path)
-except FileNotFoundError:
-    st.error(f"SVG file not found at: {svg_file_path}")
