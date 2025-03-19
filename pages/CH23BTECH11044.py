@@ -33,6 +33,7 @@ with tab14:
 
 
 
+
 # New Tabs with Added Properties
 with tab10:  # Applications
     st.header("Industrial Applications")
@@ -41,8 +42,6 @@ with tab10:  # Applications
     - Ammonia synthesis (Haber process)
     - Oxygen evolution reaction (OER) in water splitting
     
-    def calculate_activity(surface_area):
-        return base_activity * (surface_area/100)
     
     
     *Data Storage*:
@@ -57,7 +56,7 @@ with tab11:  # Astrophysics
       - r-process in neutron star mergers
       - Type Ia/II supernovae
     - *Key Isotopes*: Ru-99, Ru-106
-    - Found in presolar meteorites 🌠
+    - Found in presolar meteorites
     """)
 
 with tab12:  # Jewelry
@@ -90,15 +89,13 @@ with tab8:  # Nuclear
     st.write("### Nuclear Properties")
     st.markdown("""
     - *Radioactive Isotopes*:
-      - Ru-103: 39.26d (β⁻ → Rh-103)
-      - Ru-106: 373.6d (β⁻ → Rh-106)
+      - Ru-103: Half Life - 39.26 days (β⁻ → Rh-103)
+      - Ru-106: Half Life - 373.6 days (β⁻ → Rh-106)
     - *Decay Chains*:
       
-      graph LR
-          Ru-106 --> Rh-106
-          Rh-106 --> Pd-106
+        - Ru-106 --> Rh-106
+        - Rh-106 --> Pd-106
       
-    - Neutron Cross Section: 2.6 barns (thermal)
     """)
 
 # Background styling remains unchanged
@@ -110,6 +107,13 @@ st.markdown("""
     }}
 </style>
 """, unsafe_allow_html=True)
+
+# Additional Details
+st.write("\n")
+st.header("Additional Details  📚")
+st.write("Ruthenium is a highly effective catalyst in hydrogenation reactions and ammonia production.")
+st.write("It plays a role in magnetic storage technology for hard-disk drives.")
+st.write("Ruthenium-based catalysts are used in water splitting for hydrogen fuel cells.")
 
 # Bohr Model Section
 def render_svg(svg_file_path):
@@ -125,7 +129,7 @@ with tab1:  # Fundamental
     st.write("### Fundamental Properties")
     st.markdown("""
     - Atomic Number: 44 
-    - Magic Number Isotope: Ru-94 (50 neutrons) ✅
+    - Magic Number Isotope: Ru-94 (50 neutrons)
     - Stable Isotopes: Ru-96, Ru-98, Ru-99, Ru-100, Ru-101, Ru-102, Ru-104
     - Electronic Configuration: [Kr] 4d⁷ 5s¹ 
     """)
@@ -138,7 +142,7 @@ with tab2:  # Physical
     st.write("### Physical Properties")
     st.markdown("""
     - *Crystal Structure*: Hexagonal close-packed (HCP) 
-    - Lattice Constants: a=270.59pm, c=428.15pm 
+    - Lattice Constants: a = 270.59pm, c = 428.15pm 
     - Anisotropic Properties: Electrical/mechanical direction-dependence 
     """)
     st.write("- Appearance: Silver shiny.")
@@ -183,52 +187,13 @@ with tab6:
 with tab7:
     st.write("### Thermodynamic Properties")
     st.write("- Specific Heat Capacity (Cp): 24.06 J/(mol·K)")
-    st.write("- Heat of Formation: Not applicable.")
     st.write("- Thermal Conductivity: 117 W/(m·K)")
     st.write("- Enthalpy of Fusion: 38.59 kJ/mol")
     st.write("- Enthalpy of Vaporization: 591.6 kJ/mol")
 
-with tab8:
-    st.write("### Nuclear Properties")
-    st.write("- Nuclear Spin (I): Not applicable.")
-    st.write("- Binding Energy: Energy needed to hold the nucleus together.")
-    st.write("- Decay Mode: Not applicable.")
-    st.write("- Neutron Cross-Section: Low probability of neutron capture.")
 
 with tab9:
     st.write("Relativistic Properties")
-    st.write("- Time Dilation Effects: Not significant at atomic scale.")
     st.write("- Relativistic Energy Correction: Electron energies shift slightly due to special relativity")
 
-# Additional Details
-st.write("\n")
-st.header("Additional Details")
-st.write("Ruthenium is a highly effective catalyst in hydrogenation reactions and ammonia production.")
-st.write("It plays a role in magnetic storage technology for hard-disk drives.")
-st.write("Ruthenium-based catalysts are used in water splitting for hydrogen fuel cells.")
 
-import base64
-
-def render_svg(svg_file_path):
-    """
-    Reads and renders an SVG file in Streamlit.
-    
-    Parameters:
-        svg_file_path (str): Path to the SVG file.
-    """
-    with open(svg_file_path, "r") as f:
-        svg_content = f.read()  # Read the SVG file content
-    b64 = base64.b64encode(svg_content.encode("utf-8")).decode("utf-8")
-    html = r'<img src="data:image/svg+xml;base64,%s"/>' % b64
-    st.write(html, unsafe_allow_html=True)
-
-# Orbital Simulation Diagram Section
-st.subheader("Orbital Simulation Diagram")
-st.write("Below is an animated Bohr model representation of Rythenium:")
-
-# Render the SVG file directly (ensure the file exists in your project directory)
-svg_file_path = "assets/bohr-animated (1).svg"  # Adjust path as needed
-try:
-    render_svg(svg_file_path)
-except FileNotFoundError:
-    st.error(f"SVG file not found at: {svg_file_path}")
