@@ -17,10 +17,10 @@ st.header("Choose Element:")
 col1, col2, col3 = st.columns(3)
 
 with col1:
-    st.page_link("pages/CH23BTECH11034.py", label="Selenium-Rahul Patil (Atomic Number: 34)")
+    st.page_link("pages/CH23BTECH11034.py", label="Rahul Patil (Atomic Number: 34)")
 
 with col2:
-    st.page_link("pages/CH23BTECH11040.py", label="Zirconium - Sargadam Lokesh (Atomic Number: 40)")
+    st.page_link("pages/CH23BTECH11040.py", label="Sargadam Lokesh (Atomic Number: 40)")
 
 with col3:
-    st.page_link("pages/CH23BTECH11044.py", label="Ruthenium - Vardan Gupta (Atomic Number: 44)")
+    st.page_link("pages/CH23BTECH11044.py", label="Vardan Gupta (Atomic Number: 44)")
