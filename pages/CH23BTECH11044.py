@@ -48,7 +48,7 @@ with tab11:  # Astrophysics
       - r-process in neutron star mergers
       - Type Ia/II supernovae
     - *Key Isotopes*: Ru-99, Ru-106
-    - Found in presolar meteorites 🌠
+    - Found in presolar meteorites
     """)
 
 with tab12:  # Jewelry
@@ -116,7 +116,7 @@ with tab1:  # Fundamental
     st.write("### Fundamental Properties")
     st.markdown("""
     - Atomic Number: 44 
-    - Magic Number Isotope: Ru-94 (50 neutrons) ✅
+    - Magic Number Isotope: Ru-94 (50 neutrons)
     - Stable Isotopes: Ru-96, Ru-98, Ru-99, Ru-100, Ru-101, Ru-102, Ru-104
     - Electronic Configuration: [Kr] 4d⁷ 5s¹ 
     """)

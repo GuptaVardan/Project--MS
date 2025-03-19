@@ -99,54 +99,54 @@ render_svg("assets/bohr-animated.svg")
 # Updated Existing Tabs
 with tab1:  # Fundamental
     st.header("Fundamental Properties")
-    st.write("- Magic Number Isotope: Zr-90 (50 neutrons) ✅")
+    st.write("- Magic Number Isotope: Zr-90 (50 neutrons)")
     st.write("- Stable Isotopes: Zr-90, Zr-91, Zr-92, Zr-94")
 
-    st.write("- Atomic Number: 40 🧮")
-    st.write("- Atomic Mass: 91.22 ⚖️")
-    st.write("- Electronic Configuration: [Kr] 4d² 5s² 💻")
-    st.write("- Isotopes: Five naturally occurring isotopes 🌍")
+    st.write("- Atomic Number: 40")
+    st.write("- Atomic Mass: 91.22")
+    st.write("- Electronic Configuration: [Kr] 4d² 5s²")
+    st.write("- Isotopes: Five naturally occurring isotopes")
 
 with tab2:  # Physical
     st.header("Physical Properties")
-    st.write("- Appearance: Greyish-white 🎨")
-    st.write("- Melting Point: 1853°C 🔥")
-    st.write("- Boiling Point: 4400°C 💨")
-    st.write("- Density: 6.49 g/cm³ 📏")
-    st.write("- Atomic Radius: 160 pm ⚛️")
-    st.write("- Crystal Structure: Hexagonal close-packed 🧊")
-    st.write("- Phase Changes: HCP <863°C → BCC >863°C 🔥[6][11]")
-    st.write("- Anisotropic: Direction-dependent properties ↔[11]")
+    st.write("- Appearance: Greyish-white")
+    st.write("- Melting Point: 1853°C")
+    st.write("- Boiling Point: 4400°C")
+    st.write("- Density: 6.49 g/cm³")
+    st.write("- Atomic Radius: 160 pm")
+    st.write("- Crystal Structure: Hexagonal close-packed")
+    st.write("- Phase Changes: HCP <863°C → BCC >863°C")
+    st.write("- Anisotropic: Direction-dependent properties")
 
 with tab3:
     st.header(" Chemical Properties")
-    st.write("- Electronegativity: 1.33 ⚡")
-    st.write("- Oxidation State: +4 🔄")
-    st.write("- Reactivity: Highly resistant to corrosion ⚗️")
+    st.write("- Electronegativity: 1.33")
+    st.write("- Oxidation State: +4")
+    st.write("- Reactivity: Highly resistant to corrosion")
     st.write("- Ionization Energies:")
-    st.write(" - First: 640.1 kJ/mol 💡")
-    st.write(" - Second: 1270 kJ/mol 💡")
-    st.write(" - Third: 2218 kJ/mol 💡")
+    st.write(" - First: 640.1 kJ/mol")
+    st.write(" - Second: 1270 kJ/mol")
+    st.write(" - Third: 2218 kJ/mol")
 
 with tab4:
     st.header(" Quantum Properties")
-    st.write("- Principal Quantum Number (n): 1 to 5 🔮")
-    st.write("- Azimuthal Quantum Number (l): 0, 1, 2, 3 🔮")
+    st.write("- Principal Quantum Number (n): 1 to 5")
+    st.write("- Azimuthal Quantum Number (l): 0, 1, 2, 3")
     st.write("- Magnetic Quantum Number (mₗ): -l to +l")
     st.write("- Spin Quantum Number (mₛ): ±1/2")
 
 with tab5:
     st.header(" Mechanical Properties")
-    st.write("- Elasticity: Ductile and malleable 💪")
-    st.write("- Toughness/Ductility: High toughness 🤏")
+    st.write("- Elasticity: Ductile and malleable")
+    st.write("- Toughness/Ductility: High toughness")
 
 with tab6:
     st.header(" Electromagnetic Properties")
-    st.write("- Electrical Conductivity: Moderate conductivity ⚡")
+    st.write("- Electrical Conductivity: Moderate conductivity")
 
 with tab7:
     st.header(" Thermodynamic Properties")
-    st.write("- Specific Heat Capacity (Cp): 25.36 J/(mol·K) 🌡️")
+    st.write("- Specific Heat Capacity (Cp): 25.36 J/(mol·K)")
 
 # Updated Nuclear Properties Tab
 with tab8:  # Nuclear
