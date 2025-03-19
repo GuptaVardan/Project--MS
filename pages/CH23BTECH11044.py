@@ -19,9 +19,6 @@ tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9, tab10, tab11, tab12, tab13
     "🏭 Applications", "🌌 Astrophysics", "💎 Jewelry", "🔬 Crystallography"
 ])
 
-# Updated Existing Tabs
-
-
 
 
 # New Tabs with Added Properties
@@ -186,7 +183,6 @@ with tab7:
 
 with tab9:
     st.write("Relativistic Properties")
-    st.write("- Time Dilation Effects: Not significant at atomic scale.")
     st.write("- Relativistic Energy Correction: Electron energies shift slightly due to special relativity")
 
 

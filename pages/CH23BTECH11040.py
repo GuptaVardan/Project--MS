@@ -162,9 +162,6 @@ with tab8:  # Nuclear
           Nb-95 -->|β⁻| Mo-95
       
     """)
-    st.write("- Binding Energy: Energy needed to hold the nucleus together 🔗")
+    st.write("- Binding Energy: Energy needed to hold the nucleus together")
 
-with tab9:
-    st.header("### Relativistic Properties")
-    st.write("- Time Dilation Effects: Not significant at atomic scale 🕒")
 

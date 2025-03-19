@@ -78,23 +78,16 @@ with tab7:
     st.write("- Heat of Fusion: 5.4 kJ/mol")
     st.write("- Enthalpy of Vaporization: 26 kJ/mol")
 
-with tab8:
-    st.header(" Nuclear Properties")
-    st.write("- Nuclear Spin (I): Not applicable")
-    st.write("- Binding Energy: Energy needed to hold the nucleus together")
 
-with tab9:
-    st.header(" Relativistic Properties")
-    st.write("- Time Dilation Effects: Not significant at atomic scale")
 
 # Additional Details
 
 st.header(" Additional Details 📚")
 
 st.markdown("""
-- Selenium exhibits **photoconductivity**, increasing its conductivity when exposed to light 🌞.
-- It plays a crucial role in the **semiconductor industry** due to its unique electrical properties ⚡.
-- Selenium is used in **glass decolorization** and as a pigment for red glass 🎨.
+- Selenium exhibits **photoconductivity**, increasing its conductivity when exposed to light.
+- It plays a crucial role in the **semiconductor industry** due to its unique electrical properties.
+- Selenium is used in **glass decolorization** and as a pigment for red glass.
 """)
 
 
