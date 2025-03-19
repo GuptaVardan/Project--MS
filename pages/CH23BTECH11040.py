@@ -1,5 +1,8 @@
 import streamlit as st
 import base64
+import numpy as np
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d.art3d import Poly3DCollection
 
 # Set page configuration
 st.set_page_config(page_title="Saragadam Lokesh-Zirconium Properties", layout="wide")
@@ -13,10 +16,10 @@ st.title("Zirconium Properties 🌟")
 st.image("assets/Zirconium.png", width=200)
 
 # Create tabs with new additions
-tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9, tab10, tab11, tab12, tab13, tab14,tab15 = st.tabs([
+tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9, tab10, tab11, tab12, tab13, tab14,tab15,tab16 = st.tabs([
     "🔍 Fundamental", "🔩 Physical", "⚗ Chemical", "🔮 Quantum", "💪 Mechanical",
     "🔌 Electromagnetic", "🌡 Thermodynamic", "⚛ Nuclear", "🕳 Relativistic",
-    "🏭 Applications", "🌌 Astrophysics", "🔬 Crystallography", "⛰ Geological", "⚙ Alloys","🔬 XRD"
+    "🏭 Applications", "🌌 Astrophysics", "🔬 Crystallography", "⛰ Geological", "⚙ Alloys","🔬 XRD","🌀 3D Model"
 ])
 
 
@@ -29,7 +32,7 @@ with tab15:
     - *Key Peaks:* Corresponding to major diffraction angles (2θ)
     """)
     
-    st.image("assets/Zirconium_xrd.jpg", caption="XRD Pattern of Zirconium", use_container_width=True)
+    st.image("assets/Zirconium_xrd.jpg", caption="XRD Pattern of Zirconium", use_column_width=True)
 
 # New Tabs with Added Properties
 with tab10:  # Applications
@@ -92,6 +95,57 @@ with tab14:  # Alloys
     - Corrosion resistance <300°C
     - Thermal neutron cross-section: 0.22 barns
     """)
+
+with tab16:
+    st.header("3D Model Visualization")
+    
+    def hexagonal_lattice_3d(rows, cols, layers, spacing=1.0):
+        """Generate a 3D hexagonal lattice structure."""
+        points = []
+        
+        for z in range(layers):
+            for row in range(rows):
+                for col in range(cols):
+                    x = col * spacing * np.sqrt(3)
+                    y = row * spacing * 1.5
+                    if col % 2 == 1:
+                        y += spacing * 0.75  # Offset for hexagonal tiling
+                    points.append((x, y, z * spacing))  # Add third dimension (z-layer)
+
+        return np.array(points)
+
+    # Generate hexagonal lattice
+    rows, cols, layers = 5, 5, 3  # Modify these for different lattice sizes
+    points = hexagonal_lattice_3d(rows, cols, layers)
+
+    # Create figure and 3D axes
+    fig = plt.figure(figsize=(10, 8))
+    ax = fig.add_subplot(111, projection='3d')
+
+    # Plot points
+    ax.scatter(points[:, 0], points[:, 1], points[:, 2], color='blue', s=60)
+
+    # Connect neighboring points to create a lattice effect
+    edges = []
+    spacing = 1.0 * np.sqrt(3)  # Hexagonal spacing
+
+    for i, (x, y, z) in enumerate(points):
+        for j, (x2, y2, z2) in enumerate(points):
+            dist = np.linalg.norm([x - x2, y - y2, z - z2])
+            if 0 < dist < spacing * 1.1:  # Connect nearest neighbors
+                edges.append(([x, x2], [y, y2], [z, z2]))
+
+    for edge in edges:
+        ax.plot(edge[0], edge[1], edge[2], color='gray', linewidth=1)
+
+    # Customize appearance
+    ax.set_xlabel("X-axis")
+    ax.set_ylabel("Y-axis")
+    ax.set_zlabel("Z-axis")
+    ax.set_title("3D Hexagonal Lattice")
+    ax.set_box_aspect([1, 1, 0.6])
+    
+    st.pyplot(fig)
 
 
 
