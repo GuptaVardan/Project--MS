@@ -2,7 +2,7 @@ import streamlit as st
 import base64
 
 # Set page configuration
-st.set_page_config(page_title="Ruthenium Properties", layout="wide")
+st.set_page_config(page_title="Vardan Gupta-Ruthenium Properties", layout="wide")
 
 # Load CSS
 with open("assets/style.css") as f:
@@ -13,11 +13,24 @@ st.title("Ruthenium Properties 🌟")
 st.image("assets/ruthenium.png", width=200)
 
 # Create tabs with new additions
-tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9, tab10, tab11, tab12, tab13 = st.tabs([
+tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9, tab10, tab11, tab12, tab13,tab14 = st.tabs([
     "🔍 Fundamental", "🔩 Physical", "⚗ Chemical", "🔮 Quantum", "💪 Mechanical",
     "🔌 Electromagnetic", "🌡 Thermodynamic", "⚛ Nuclear", "🕳 Relativistic",
-    "🏭 Applications", "🌌 Astrophysics", "💎 Jewelry", "🔬 Crystallography"
+    "🏭 Applications", "🌌 Astrophysics", "💎 Jewelry", "🔬 Crystallography","🔬 XRD"
 ])
+
+# Updated Existing Tabs
+with tab14:
+    st.header("X-ray Diffraction (XRD) Pattern")
+    st.write("X-ray source: Co Kα (Cobalt K-alpha, λ ≈ 1.7889 Å)")
+    st.markdown("""
+    - *Material:* Ruthenium (Ru)
+    - *Crystal Structure:* Hexagonal Close-Packed (HCP)
+    - *Key Peaks:* Corresponding to major diffraction angles (2θ)
+    """)
+    
+    st.image("assets/Ruthenium_xrd.jpg", caption="XRD Pattern of Ruthenium", use_container_width=True)
+
 
 
 

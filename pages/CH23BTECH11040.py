@@ -2,7 +2,7 @@ import streamlit as st
 import base64
 
 # Set page configuration
-st.set_page_config(page_title="Zirconium Properties", layout="wide")
+st.set_page_config(page_title="Saragadam Lokesh-Zirconium Properties", layout="wide")
 
 # Load CSS
 with open("assets/style.css") as f:
@@ -13,14 +13,23 @@ st.title("Zirconium Properties 🌟")
 st.image("assets/Zirconium.png", width=200)
 
 # Create tabs with new additions
-tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9, tab10, tab11, tab12, tab13, tab14 = st.tabs([
+tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9, tab10, tab11, tab12, tab13, tab14,tab15 = st.tabs([
     "🔍 Fundamental", "🔩 Physical", "⚗ Chemical", "🔮 Quantum", "💪 Mechanical",
     "🔌 Electromagnetic", "🌡 Thermodynamic", "⚛ Nuclear", "🕳 Relativistic",
-    "🏭 Applications", "🌌 Astrophysics", "🔬 Crystallography", "⛰ Geological", "⚙ Alloys"
+    "🏭 Applications", "🌌 Astrophysics", "🔬 Crystallography", "⛰ Geological", "⚙ Alloys","🔬 XRD"
 ])
 
 
-
+with tab15:
+    st.header("X-ray Diffraction (XRD) Pattern")
+    st.write("X-ray source: Mo Kα (Molybdenum K-alpha, λ ≈ 0.7107 Å")
+    st.markdown("""
+    - *Material:* Zirconium (Zr)
+    - *Crystal Structure:* Hexagonal Close-Packed (HCP)
+    - *Key Peaks:* Corresponding to major diffraction angles (2θ)
+    """)
+    
+    st.image("assets/Zirconium_xrd.jpg", caption="XRD Pattern of Zirconium", use_container_width=True)
 
 # New Tabs with Added Properties
 with tab10:  # Applications

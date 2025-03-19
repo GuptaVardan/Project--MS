@@ -2,7 +2,7 @@ import streamlit as st
 import base64
 
 # Set page configuration
-st.set_page_config(page_title="Selenium Properties", layout="wide")
+st.set_page_config(page_title="Rahul Patil-Selenium Properties", layout="wide")
 
 # Load CSS
 with open("assets/style.css") as f:
@@ -15,12 +15,21 @@ st.image("assets/selenium.png", width=200)
 
 
 # Create tabs with new additions
-tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9, tab10, tab11, tab12, tab13, tab14 = st.tabs([
+tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9, tab10, tab11, tab12, tab13, tab14 ,tab15= st.tabs([
     "🔍 Fundamental", "🔩 Physical", "⚗ Chemical", "🔮 Quantum", "💪 Mechanical",
     "🔌 Electromagnetic", "🌡 Thermodynamic", "⚛ Nuclear", "🕳 Relativistic",
-    "🔲 Allotropes", "☠ Toxicity", "🌌 Astrophysics", "💡 Applications", "🔬 Crystallography"
+    "🔲 Allotropes", "☠ Toxicity", "🌌 Astrophysics", "💡 Applications", "🔬 Crystallography","🔬 XRD"
 ])
-
+with tab15:
+    st.header("X-ray Diffraction (XRD) Pattern")
+    st.write("X-ray source: Cu Kα (Copper K-alpha, λ ≈ 1.5406 Å)")
+    st.markdown("""
+    - *Material:* Selenium (Se)
+    - *Crystal Structure:* Hexagonal Close-Packed (HCP)
+    - *Key Peaks:* Corresponding to major diffraction angles (2θ)
+    """)
+    
+    st.image("assets/Selenium_xrd.jpg", caption="XRD Pattern of Selenium", use_container_width=True)
 # Display properties in tabs
 with tab1:
     st.header(" Fundamental Properties")
