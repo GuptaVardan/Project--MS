@@ -89,7 +89,6 @@ with tab8:  # Nuclear
           Ru-106 --> Rh-106
           Rh-106 --> Pd-106
       
-    - Neutron Cross Section: 2.6 barns (thermal)
     """)
 
 # Background styling remains unchanged
@@ -186,12 +185,6 @@ with tab7:
     st.write("- Enthalpy of Fusion: 38.59 kJ/mol")
     st.write("- Enthalpy of Vaporization: 591.6 kJ/mol")
 
-with tab8:
-    st.write("### Nuclear Properties")
-    st.write("- Nuclear Spin (I): Not applicable.")
-    st.write("- Binding Energy: Energy needed to hold the nucleus together.")
-    st.write("- Decay Mode: Not applicable.")
-    st.write("- Neutron Cross-Section: Low probability of neutron capture.")
 
 with tab9:
     st.write("Relativistic Properties")

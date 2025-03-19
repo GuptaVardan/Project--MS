@@ -138,7 +138,7 @@ with tab10:  # Allotropes
     """)
 
 with tab11:  # Toxicity
-    st.header("## Toxicological Profile")
+    st.header("Toxicological Profile")
     st.markdown("""
     - *LD₅₀ (Human)*: ~5mg/kg
     - *Acute Symptoms*: Respiratory distress, garlic breath
@@ -151,21 +151,17 @@ with tab12:  # Astrophysics
     - *Formation Process*:
       - r-process in Type II supernovae
       - Neutron star mergers
-    - *Key Isotopes*: ⁷⁷Se, ⁷⁸Se, ⁸²Se[8]
+    - *Key Isotopes*: ⁷⁷Se, ⁷⁸Se, ⁸²Se
     """)
 
 with tab13:  # Applications
     st.header("Industrial Applications")
     st.markdown("""
-    - *Photoconductive Devices*:
-      
-      def calculate_conductivity(light_intensity):
-          return base_conductivity * (1 + 0.15*light_intensity)
-      
     - *Semiconductor Uses*:
-      - CIGS solar cells
+      - Solar cells
       - Quantum dot LEDs
     """)
+
 
 with tab14:  # Crystallography
     st.header("Crystalline Properties")
