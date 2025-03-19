@@ -3,6 +3,7 @@ import base64
 import numpy as np
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d.art3d import Poly3DCollection
+import plotly.graph_objects as go
 
 # Set page configuration
 st.set_page_config(page_title="Rahul Patil-Selenium Properties", layout="wide")
@@ -99,8 +100,13 @@ with tab7:
     st.write("- Enthalpy of Vaporization: 26 kJ/mol")
 
 with tab16:
+ import streamlit as st
+import numpy as np
+import plotly.graph_objects as go
+
+with tab15:
     st.header("3D Model Visualization")
-    
+
     def hexagonal_lattice_3d(rows, cols, layers, spacing=1.0):
         """Generate a 3D hexagonal lattice structure."""
         points = []
@@ -120,34 +126,41 @@ with tab16:
     rows, cols, layers = 5, 5, 3  # Modify these for different lattice sizes
     points = hexagonal_lattice_3d(rows, cols, layers)
 
-    # Create figure and 3D axes
-    fig = plt.figure(figsize=(10, 8))
-    ax = fig.add_subplot(111, projection='3d')
+    # Create a 3D scatter plot
+    fig = go.Figure()
 
-    # Plot points
-    ax.scatter(points[:, 0], points[:, 1], points[:, 2], color='blue', s=60)
+    # Add points
+    fig.add_trace(go.Scatter3d(
+        x=points[:, 0], y=points[:, 1], z=points[:, 2],
+        mode='markers',
+        marker=dict(size=6, color='blue', opacity=0.8)
+    ))
 
     # Connect neighboring points to create a lattice effect
-    edges = []
     spacing = 1.0 * np.sqrt(3)  # Hexagonal spacing
 
     for i, (x, y, z) in enumerate(points):
         for j, (x2, y2, z2) in enumerate(points):
             dist = np.linalg.norm([x - x2, y - y2, z - z2])
             if 0 < dist < spacing * 1.1:  # Connect nearest neighbors
-                edges.append(([x, x2], [y, y2], [z, z2]))
-
-    for edge in edges:
-        ax.plot(edge[0], edge[1], edge[2], color='gray', linewidth=1)
+                fig.add_trace(go.Scatter3d(
+                    x=[x, x2], y=[y, y2], z=[z, z2],
+                    mode='lines',
+                    line=dict(color='gray', width=2)
+                ))
 
     # Customize appearance
-    ax.set_xlabel("X-axis")
-    ax.set_ylabel("Y-axis")
-    ax.set_zlabel("Z-axis")
-    ax.set_title("3D Hexagonal Lattice")
-    ax.set_box_aspect([1, 1, 0.6])
-    
-    st.pyplot(fig)
+    fig.update_layout(
+        title="3D Hexagonal Lattice",
+        scene=dict(
+            xaxis_title="X-axis",
+            yaxis_title="Y-axis",
+            zaxis_title="Z-axis"
+        ),
+        margin=dict(l=0, r=0, b=0, t=40)
+    )
+
+    st.plotly_chart(fig, use_container_width=True)
 
 # Additional Details
 
